@@ -19,6 +19,19 @@ After downloading the application, users would have to install git, which is a s
 * I connected to the server by using course-specific account and entered my password 
 
 ![Image](successful_login.png)
-* This screenshot shows that I am connected to the server.
+* This screenshot shows that I am successfully connected to the server.
 * It tells you the last login time, welcomes you (referring users by their course-specific account), and tells you the server that you’re logged into.
 
+![Image](command1.png)
+* I tested out some commands in the terminal.
+* pwd prints out the working directory which tells me where I'm at on the server.
+* ls prints out all the files in the current directory.
+* ls -l prints out all the files in the current directory in vertical order. 
+* cd allows me to change directory. 
+* cd .. allowd me to go to the parent directory or the directory above the current one. 
+* After I went to the parent directory, I printed out all the directories in the parent directory.
+
+![Image](command2.png)
+* After printing out all the directories in the parent directory, I tried to change directory to others' directories but the system tells me that I don't have permission to do that. 
+* I tried to list out all the items in others' directories but the system also tells me that I don't have permission to do that. 
+* I tried to make a new directory called "test" in the parent directort but the system tells me that I don't have permission to do that. 
