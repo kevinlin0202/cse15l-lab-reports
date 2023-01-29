@@ -13,7 +13,7 @@ In this lab, we will use a code editor Visual Studio Code (VS Code) to connect t
 After downloading the application, users would have to install git, which is a source code management, to use the newly-installed git bash in VS Code. 
 
 ![Image](remote_connect.png)
-* To log into the course-specific account on ieng6, users would have to use command “ssh” followed by their course-specific accounts plus @ueng6.ucsd.edu (e.g., my course-specific account is “cs15lwi23abw@ieng6.ucsd.edu”). 
+* To log into the course-specific account on ieng6, users would have to use command `ssh` followed by `their course-specific accounts` plus `@ueng6.ucsd.edu` (e.g., my course-specific account is `cs15lwi23abw@ieng6.ucsd.edu`). 
 * If users are connecting to the server for the first time, they will get a message asking them whether they want to continue connecting to the server or not; always type yes to connect.
 * After users enter yes and enter, the terminal would ask for their passwords, which are transparent and not visible due to privacy. 
 * I connected to the server by using course-specific account and entered my password 
@@ -24,11 +24,11 @@ After downloading the application, users would have to install git, which is a s
 
 ![Image](command1.png)
 * I tested out some commands in the terminal.
-* pwd prints out the working directory which tells me where I'm at on the server.
-* ls prints out all the files in the current directory.
-* ls -l prints out all the files in the current directory in vertical order. 
-* cd allows me to change directory. 
-* cd .. allowd me to go to the parent directory or the directory above the current one. 
+* `pwd` prints out the working directory which tells me where I'm at on the server.
+* `ls` prints out all the files in the current directory.
+* `ls -l` prints out all the files in the current directory in vertical order. 
+* `cd` allows me to change directory. 
+* `cd ..` allowd me to go to the parent directory or the directory above the current one. 
 * After I went to the parent directory, I printed out all the directories in the parent directory.
 
 ![Image](command2.png)
