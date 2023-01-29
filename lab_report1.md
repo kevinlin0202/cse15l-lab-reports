@@ -14,8 +14,8 @@ After downloading the application, users would have to install git, which is a s
 
 ![Image](remote_connect.png)
 * To log into the course-specific account on ieng6, users would have to use command `ssh` followed by `their course-specific accounts` plus `@ueng6.ucsd.edu` (e.g., my course-specific account is `cs15lwi23abw@ieng6.ucsd.edu`). 
-* If users are connecting to the server for the first time, they will get a message asking them whether they want to continue connecting to the server or not; always type yes to connect.
-* After users enter yes and enter, the terminal would ask for their passwords, which are transparent and not visible due to privacy. 
+* If users are connecting to the server for the first time, they will get a message asking them whether they want to continue connecting to the server or not; always type `yes` to connect.
+* After users enter `yes` and enter, the terminal would ask for their passwords, which are transparent and not visible due to privacy. 
 * I connected to the server by using course-specific account and entered my password 
 
 ![Image](successful_login.png)
