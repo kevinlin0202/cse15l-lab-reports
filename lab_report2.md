@@ -77,3 +77,38 @@ class StringServer {
 ![Image](symptom2.png)
 * This screenshot is the symptom if an input for the buggy program that doesn't induce a failure.
 
+* The bug (before)
+```java
+  static double averageWithoutLowest(double[] arr) {
+    if(arr.length < 2) { return 0.0; }
+    double lowest = arr[0];
+    for(double num: arr) {
+      if(num < lowest) { lowest = num; }
+    }
+    double sum = 0;
+    for(double num: arr) {
+      if(num != lowest) { sum += num; }
+    }
+    return sum / (arr.length - 1);
+  }
+```
+
+* The bug (code for fixing the bug)
+```java
+static double averageWithoutLowest(double[] arr) {
+    if(arr.length < 2) { return 0.0; }
+    double lowest = arr[0];
+
+    for(double num: arr) {
+      if(num < lowest) { lowest = num; }
+    }
+    double sum = 0;
+    for(double num: arr) {
+      sum += num;
+    }
+    sum -= lowest;
+    return sum / (arr.length - 1);
+  }
+```
+* The original code uses a `for loop` to find out the smallest number in the list by looping through the entire list; by assuming the first element as the smallest number, it compares the rest of the numbers in the list with the smallest number. If the number is smaller than the smallest number, it becomes the smallest number. Later, the original code uses another `for loop` to find out the sum without the smallest number. However, the bug is that when there are multiple smallest numbers in the list, the code ignores them and doesn't add them to the sum. It leads to a bug where it might miscalculate the sum of the list without the smallest number and average. 
+* The fix adresses the bug in the original code because it uses a `for loop` to find out the smallest number in the list by looping through the entire list. Later, the fixed code uses a `for loop` to sum up the entire list but subtracts the lowest number to make sure that it gets the sum without the lowest number. Later, it is divided by the size of the list without the lowest number to find out the average without the lowest number. 
