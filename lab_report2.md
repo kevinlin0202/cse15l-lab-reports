@@ -93,7 +93,7 @@ class StringServer {
   }
 ```
 
-* The bug (code for fixing the bug)
+* Code for fixing the bug
 ```java
 static double averageWithoutLowest(double[] arr) {
     if(arr.length < 2) { return 0.0; }
