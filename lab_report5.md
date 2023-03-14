@@ -27,7 +27,7 @@ Sources: [Link]([https://linuxhint.com/linux-find-command-tutorial/](https://www
 ![Image](-i.1.png)
 
 * Example 2:
-![Image](-i.22.png)
+![Image](-i.2.png)
 
 According to the source, `grep -i` enables to search for a string case "insensitively" in the given directory. By using this option, it gives me more flexibility on looking for a string or pattern. In these examples, I was able to search for strings or patterns in a case-insensitive manner and gives me more results when searching. This command might be useful because it provides more flexibility to the users for not worrying about the case sensitive and search for particular patterns within a directory. For example, when users search for "battle", the output of using `grep -i` also shows "Battle" or even words containing the particular pattern "Battleground".  
 
